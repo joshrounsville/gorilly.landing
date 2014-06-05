@@ -1,0 +1,45 @@
+/* ==========================================================================
+  Icons
+========================================================================== */
+
+
+.sprite {
+  background-image: url(/img/elements/sprite.png);
+  background-repeat: no-repeat;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  &:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin: 0;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+  }
+}
+
+.icon-facebook {
+  &:before {
+    content: '\e800';
+  }
+}
+
+.icon-twitter {
+  &:before {
+    content: '\e801';
+  }
+}
+
+.icon-mail {
+  &:before {
+    content: '\e802';
+  }
+}

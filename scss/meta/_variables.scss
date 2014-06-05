@@ -1,0 +1,47 @@
+/* ==========================================================================
+  Variables
+========================================================================== */
+
+$padding: 20px;
+$margin: 50px;
+
+$textColor: #ead7d7;
+$linkColor: #333;
+$linkHover: lighten($linkColor, 20%);
+
+
+@mixin mill() {
+  font-family: "mill", Georgia, Times, serif;
+  font-weight: normal;
+}
+
+@mixin millItalic() {
+  font-family: "millItalic", Georgia, Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin miller() {
+  font-family: "miller", Georgia, Times, serif;
+}
+
+@mixin millerItalic() {
+  font-family: "millerItalic", Georgia, Times, serif;
+  font-style: normal;
+}
+
+@mixin millerDisplay() {
+  font-family: "millerDisplay", Georgia, Times, serif;
+  letter-spacing: 2px;
+}
+
+@mixin millerBold() {
+  font-family: "millerBold", Georgia, Times, serif;
+  font-weight: normal;
+}
+
+@mixin leagueGothic() {
+  font-family: "leagueGothic", helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}

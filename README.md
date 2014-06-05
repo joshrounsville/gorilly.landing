@@ -1,2 +1,1 @@
-gorilly.landing
-===============
+Gorilly Landing Page

@@ -1,0 +1,71 @@
+/* ==========================================================================
+  Nav
+========================================================================== */
+
+
+.nav-main {
+  position: fixed;
+  top: 170px;
+  left: 50px;
+  z-index: 100;
+  animation: fadeIn .5s 1s both;
+  li {
+    margin: 0 0 15px;
+  }
+  a {
+    display: block;
+    border-left: 5px solid #fff;
+    width: 25px;
+    height: 40px;
+    position: relative;
+    &:hover,
+    &:focus{
+      border-color: #fedd35;
+      span {
+        display: block;
+        animation: slideIn .3s both;
+      }
+    }
+  }
+  span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -9px;
+    color: #fff;
+    width: 200px;
+    display: none;
+  }
+
+  @include breakpoint(small) {
+    animation: none;
+    display: none;
+  }
+}
+
+
+.nav-social {
+  margin: 60px 0 10px 0;
+  ul {
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    font-size: 22px;
+    color: #fdfadc;
+    border: 2px solid #fdfadc;
+    border-radius: 100%;
+    &:hover,
+    &:focus {
+      border-color: #338953;
+    }
+  }
+}

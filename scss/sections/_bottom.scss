@@ -1,0 +1,58 @@
+/* ==========================================================================
+  Bottom
+========================================================================== */
+
+
+.bottom {
+  background: url(/img/backgrounds/bg-starfield-bottom.jpg) no-repeat center bottom;
+  background-color: #b3d9bf;
+  color: #574a45;
+  text-align: center;
+  .container {
+    padding-bottom: 20px;
+  }
+  .vert-border {
+    @include leagueGothic();
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 200px 0;
+    position: relative;
+    &:before,
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 2px;
+      height: 33%;
+      background: #5fc384;
+      top: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+    &:after {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  li {
+    margin: 0 0 20px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  @include breakpoint(small) {
+    .vert-border {
+      padding: 100px 0;
+      &:before,
+      &:after {
+        height: 28%;
+      }
+    }
+  }
+  @include breakpoint(xSmall) {
+    .vert-border {
+      font-size: 22px;
+    }
+  }
+}

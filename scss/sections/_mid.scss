@@ -1,0 +1,29 @@
+/* ==========================================================================
+  Mid
+========================================================================== */
+
+
+.mid {
+  padding: 0 30px;
+  background: url(/img/backgrounds/bg-star.png) repeat center center;
+  background-color: #63bd83;
+  h2 {
+    text-align: center;
+    color: #fdfadc;
+    margin: 130px 0 80px;
+  }
+
+  @include breakpoint(small) {
+    padding: 0 20px;
+    h2 {
+      margin: 30px 0 30px;
+    }
+    .container {
+      padding-bottom: 0;
+    }
+  }
+
+  @include breakpoint(xSmall) {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,246 @@
+/* ==========================================================================
+  Forms
+========================================================================== */
+
+form {
+  margin: 0 auto 50px;
+  width: 946px;
+  max-width: 90%;
+  padding: 15px;
+  text-align: center;
+  background: #fbf5dd;
+  .row {
+    padding: 10px 0 20px;
+    position: relative;
+  }
+  h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #5bc482;
+    margin: 30px 0 10px;
+  }
+  h5 {
+    text-transform: none;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: none;
+    animation: fadeIn .3s both;
+    &.show {
+      display: block;
+    }
+  }
+  .invalid {
+    top: -10px;
+  }
+  .success {
+    top: 30px;
+  }
+  .btn {
+    letter-spacing: 2px;
+    border-radius: 0;
+  }
+
+  .request-invite & {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    float: right;
+    .border {
+      padding: 20px;
+    }
+    .row {
+      margin: 0;
+      padding: 0;
+      @include clearfix();
+    }
+    h5 {
+      font-size: 16px;
+      color: #050808;
+    }
+    input {
+      width: 100%;
+      padding: 10px 10px 5px;
+      margin: 0;
+      font-size: 16px;
+    }
+    .btn {
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 10px 26px 8px;
+    }
+    .success {
+      top: 10px;
+    }
+    .invalid {
+      top: -15px;
+    }
+  }
+
+  @include breakpoint(xSmall) {
+    padding: 5px;
+    max-width: 100%;
+    h3 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 17px;
+    }
+    .btn {
+      width: 90%;
+      margin: 0 auto 20px;
+    }
+
+    .request-invite & {
+      width: 100%;
+      .btn {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
+.border {
+  border: 1px solid #574a45;
+  padding: 10px;
+  position: relative;
+
+  @include breakpoint(small) {
+    padding: 5px;
+  }
+}
+
+.dots {
+  width: 100%;
+  &:before,
+  &:after {
+    content: "•";
+    display: block;
+    color: #574a45;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+  &:after {
+    right: 10px;
+    left: auto;
+  }
+}
+
+.dots-bottom {
+  &:before,
+  &:after {
+    top: auto;
+    bottom: 5px;
+  }
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="email"],
+input[type="text"] {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #574a45;
+  color: #574a45;
+  text-align: center;
+  background: none;
+  width: 60%;
+  padding: 12px 10px 10px;
+  margin: 0 0 5px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  transition: all .2s ease-in-out;
+  border-radius: 0;
+  @include placeholder(#574a45);
+  @include millItalic();
+  &:hover,
+  &:focus {
+    background: #b5ddbe;
+  }
+  &.sent {
+    opacity: 0;
+  }
+
+  @include breakpoint(xSmall) {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+input[type="search"] {
+  -appearance: textfield;
+  box-sizing: content-box;
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+

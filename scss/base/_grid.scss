@@ -1,0 +1,17 @@
+/* ==========================================================================
+  Grid - Based on the Twitter Bootstrap
+========================================================================== */
+
+
+.full-width {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  padding: 0 20px 60px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @include clearfix();
+}

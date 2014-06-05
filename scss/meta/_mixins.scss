@@ -1,0 +1,56 @@
+/* ==========================================================================
+  Mixins
+========================================================================== */
+
+
+/**** **** **** **** ****
+BREAKPOINTS -
+USAGE: @include breakpoint(small) {}
+**** **** **** **** ****/
+
+@mixin breakpoint($point) {
+  @if $point == xSmall {
+    @media (max-width: 630px)  { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 850px)  { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 1060px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1390px) { @content; }
+  }
+}
+
+
+
+/**** **** **** **** ****
+CLEARFIX -
+USAGE: @include clearfix();
+**** **** **** **** ****/
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+/**** **** **** **** ****
+PLACEHOLDER -
+USAGE: @include placeholder(#333);
+**** **** **** **** ****/
+
+@mixin placeholder($color) {
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+  &::-webkit-input-placeholder { color: $color; }
+}
